@@ -41,4 +41,8 @@ neoForge {
     }
 }
 
+dependencies {
+    implementation("dev.ryanhcode.sable:sable-neoforge-${minecraft_version}:${sable_version}")
+}
+
 sourceSets.main.resources { srcDir 'src/generated/resources' }
