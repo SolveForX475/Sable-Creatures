@@ -16,7 +16,7 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-            "com.example.examplemod.ExampleMod"
+            "com.xenon135.sablecreatures.SableCreatures"
         ]
     },
     "mixins": [

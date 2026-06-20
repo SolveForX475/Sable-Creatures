@@ -42,7 +42,14 @@ neoForge {
 }
 
 dependencies {
-    implementation("dev.ryanhcode.sable:sable-neoforge-${minecraft_version}:${sable_version}")
+    implementation("dev.ryanhcode.sable:sable-neoforge-${minecraft_version}:${sable_version}"){
+        exclude group: "com.simibubi.create"
+        exclude group: "foundry.veil"
+    }
+
+    implementation("foundry.veil:veil-neoforge-${project.minecraft_version}:${project.veil_version}") {
+        exclude group: "maven.modrinth"
+    }
 }
 
 sourceSets.main.resources { srcDir 'src/generated/resources' }

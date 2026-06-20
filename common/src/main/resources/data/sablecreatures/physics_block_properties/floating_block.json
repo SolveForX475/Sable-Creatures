@@ -1,0 +1,7 @@
+{
+  "selector": "sablecreatures:floaty_block",
+
+  "properties": {
+    "sable:floating_material": "sablecreatures:floaty"
+  }
+}
