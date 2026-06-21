@@ -1,9 +1,10 @@
 package com.xenon135.sablecreatures;
 
+import com.xenon135.sablecreatures.index.CreaturesBlockEntities;
+import com.xenon135.sablecreatures.index.CreaturesBlocks;
 import com.xenon135.sablecreatures.platform.Services;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 
 // This class is part of the common project meaning it is shared between all supported loaders. Code written here can only
 // import and access the vanilla codebase, libraries used by vanilla, and optionally third party libraries that provide
@@ -28,6 +29,7 @@ public class CommonClass {
 
             Constants.LOG.info("Hello to examplemod");
         }
-        Blocks.init();
+        CreaturesBlocks.init();
+        CreaturesBlockEntities.init();
     }
 }
